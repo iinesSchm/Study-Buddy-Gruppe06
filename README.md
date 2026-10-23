@@ -33,37 +33,44 @@ Quellen: Auftrag des „Kunden“ und Project Brief, siehe Ordner [`00 - Projekt
 | Ordner | Inhalt |
 |---|---|
 | [`00 - Projektinformationen`](<00 - Projektinformationen/>) | Auftrag des „Kunden“ (E-Mail) und Project Brief „Study Buddy“ (HTML) |
-| [`01 - Projektmanagement und Tracking`](<01 - Projektmanagement und Tracking/>) | Register der offenen Annahmen (A-001 bis A-008) und der offenen Fragen (F-001 bis F-010), jeweils mit Kategorie, betroffenen Stakeholdern, Priorität, Komplexität und Status |
-| [`02 - Stakeholderanalyse`](<02 - Stakeholderanalyse/>) | Stakeholderanalyse je Stakeholder-Gruppe mit Beschreibung, Persona-Schema (angelehnt an Rupp & SOPHIST, 2021), benötigten Informationen, Erkenntniszielen und Interviewleitfaden |
+| [`01 - Projektmanagement und Tracking`](<01 - Projektmanagement und Tracking/>) | Register der offenen Annahmen (A-001 bis A-009) und der offenen Fragen (F-001 bis F-015), jeweils mit Kategorie, betroffenen Stakeholdern, Priorität, Komplexität und Status |
+| [`02 - Stakeholderanalyse`](<02 - Stakeholderanalyse/>) | Übergreifende Stakeholderanalyse (Bewertung und Portfolio) sowie detaillierte Analysen je Stakeholder-Gruppe |
 | ↳ `021 - Studierende` | Stakeholderanalyse und Interviewleitfaden für Studierende |
 | ↳ `022 - Lehrende` | Stakeholderanalyse und Interviewleitfaden für Lehrende |
-| [`03 - Requirements`](<03 - Requirements/>) | „AI Challenge Analyse“: Validierung KI-generierter Anforderungen (REQ-001, REQ-003) mit getroffenen Annahmen, fehlenden Informationen, zu befragenden Stakeholdern, Prüffragen und Einordnung nach Rupp et al. |
+| [`03 - Requirements`](<03 - Requirements/>) | „AI Challenge Analyse“: Validierung KI-generierter Anforderungen (REQ-001, REQ-003) |
 | [`99 - icebox`](<99 - icebox/>) | Ablage für zurückgestellte Inhalte (derzeit nur eine leere Platzhalterdatei) |
 
 ### Dateien im Detail
 
-- `01 - Projektmanagement und Tracking/Register - offene Annahmen.xlsx` – Annahmen A-001 bis A-008 (z. B. Aktivitätsmessung, Invasivität von Erinnerungen, Messung des Lernfortschritts), alle mit Status „nicht validiert“
-- `01 - Projektmanagement und Tracking/Register - offene Fragen und Annahmen.xlsx` – Fragen F-001 bis F-010 (z. B. Budget, Zeitrahmen, MVP, Datenminimierung, Rolle der Studiengangsleitung), alle mit Status „offen“
-- `02 - Stakeholderanalyse/021 - Studierende/Stakeholder - Studierende.docx`
-- `02 - Stakeholderanalyse/021 - Studierende/Stakeholder - Studierende - Interviewleitfaden.docx`
-- `02 - Stakeholderanalyse/022 - Lehrende/Stakeholder - Lehrende.docx`
-- `02 - Stakeholderanalyse/022 - Lehrende/Stakeholder - Lehrende - Interviewleitfaden.docx`
-- `03 - Requirements/AI Challenge Analyse.docx`
+**01 – Projektmanagement und Tracking**
+
+- `Register - offene Annahmen.xlsx` – Annahmen A-001 bis A-009, z. B. Aktivitätsmessung, Invasivität von Erinnerungen, Messung des Lernfortschritts und (neu) Integration des Authentifizierungssystems der FernFH. Alle Annahmen haben den Status „nicht validiert“.
+- `Register - offene Fragen.xlsx` – Fragen F-001 bis F-015, z. B. Budget, Zeitrahmen, MVP, Datenminimierung und Rolle der Studiengangsleitung. Neu hinzugekommen sind Fragen zu Schnittstellen und Benutzerverwaltung (F-011 bis F-013), zu einem Gastzugang (F-014) und zum Reporting für Datenschutzbeauftragte (F-015). Alle Fragen haben den Status „offen“.
+
+**02 – Stakeholderanalyse**
+
+- `StakeholderAnalyse.xlsx` – Übersicht über acht Stakeholder: Studierende, Studierendenvertretung, Lehrende, Lehrendenvertretung, Studiengangsleitung, Studienadministration, IT & Online-Campus-Team sowie Datenschutz & Informationssicherheit. Je Stakeholder sind Interessen und Begründung beschrieben und Auswirkung, Einfluss und Risiko bei fehlender Einbindung auf einer Skala von 0 bis 10 bewertet. Der Handlungsbedarf wird als Einfluss minus Auswirkung berechnet. Ein Streudiagramm stellt Auswirkung und Einfluss als Portfolio dar (Mittelachsen bei 5).
+- `021 - Studierende/Stakeholder - Studierende.docx` und `022 - Lehrende/Stakeholder - Lehrende.docx` – Beschreibung, Persona-Schema (angelehnt an Rupp & SOPHIST, 2021), benötigte Informationen, Erkenntnisziele und Begründung der gewählten Elicitation-Technik (Workshop).
+- `021 - Studierende/Stakeholder - Studierende - Interviewleitfaden.docx` – Interviewleitfaden mit 12 Fragen (STF-01 bis STF-12).
+- `022 - Lehrende/Stakeholder - Lehrende - Interviewleitfaden.docx` – Interviewleitfaden mit 14 Fragen (LPF-01 bis LPF-14).
+
+**03 – Requirements**
+
+- `AI Challenge Analyse.docx` – Analyse der KI-generierten Anforderungen REQ-001 (Erinnerung nach sieben Tagen Inaktivität) und REQ-003 (automatische Information der Studiengangsleitung bei kritischem Lernrückstand). Je Anforderung: getroffene Annahmen, fehlende Informationen, zu befragende Stakeholder, Prüffragen und Einordnung nach Rupp et al.
 
 ## Arbeitsstand
 
-Stand: 10.10.2026 (Version 0.1 der Register)
+Stand: 23.10.2026
 
-- Stakeholderanalysen für **Studierende** und **Lehrende** liegen vor, inklusive Erkenntniszielen und Interviewleitfäden.
-- Offene Annahmen und offene Fragen werden in zwei Registern geführt; Priorität und Komplexität sind bei den Annahmen noch nicht bewertet.
-- Zwei KI-generierte Anforderungen (REQ-001, REQ-003) wurden kritisch analysiert. Dabei wurde unter anderem festgestellt, dass die Studiengangsleitung als weiterer Stakeholder zu berücksichtigen ist.
-- Die Interviewleitfäden enthalten Felder für Durchführung und Antworten; durchgeführte Interviews sind im Repository noch nicht dokumentiert.
+- **Aufgabe 1:** Detaillierte Stakeholderanalysen für Studierende und Lehrende mit Erkenntniszielen, Interviewleitfäden und Workshop als Elicitation-Technik; Analyse von zwei KI-generierten Anforderungen (REQ-001, REQ-003).
+- **Mission 2b:** Register überarbeitet und in zwei getrennte Dateien für Annahmen und Fragen aufgeteilt. Neue Einträge betreffen vor allem Authentifizierung, Schnittstellen, Benutzerverwaltung und Datenschutz.
+- **Aufgabe 2:** Übergreifende Stakeholderanalyse mit acht Stakeholdern, Bewertung und Portfolio-Darstellung. Neu gegenüber Aufgabe 1 sind unter anderem Studiengangsleitung, Studienadministration, IT & Online-Campus-Team sowie Datenschutz & Informationssicherheit.
 
 ## Hinweis zur Nutzung von KI
 
 Gemäß der Dokumentationspflicht im LV-Konzept SED605 (Abschnitt „KI in der Lehre“):
 
 - **Tool:** Claude Code (Anthropic)
-- **Modell:** Claude Opus 5.5 (`claude-opus-5-5`), Stand 10.10.2026
+- **Modell:** Claude Opus 5.5 (`claude-opus-5-5`), Überarbeitungen am 10.10.2026 und 23.10.2026
 - **Art der Nutzung:** Überarbeitung und Strukturierung dieser README-Datei. Grundlage waren die im Repository vorhandenen Dateien sowie das LV-Konzept. Die inhaltlichen Arbeitsergebnisse in den Ordnern `00` bis `99` wurden durch diese Überarbeitung nicht verändert.
 - **Übernommene Inhalte:** Der Text dieser README-Datei wurde von der KI formuliert und vom Team geprüft. Die Verantwortung für Richtigkeit und Vollständigkeit liegt beim Team.
