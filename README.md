@@ -37,7 +37,9 @@ Quellen: Auftrag des „Kunden“ und Project Brief, siehe Ordner [`00 - Projekt
 | [`02 - Stakeholderanalyse`](<02 - Stakeholderanalyse/>) | Übergreifende Stakeholderanalyse (Bewertung und Portfolio) sowie detaillierte Analysen je Stakeholder-Gruppe |
 | ↳ `021 - Studierende` | Stakeholderanalyse und Interviewleitfaden für Studierende |
 | ↳ `022 - Lehrende` | Stakeholderanalyse und Interviewleitfaden für Lehrende |
-| [`03 - Requirements`](<03 - Requirements/>) | „AI Challenge Analyse“: Validierung KI-generierter Anforderungen (REQ-001, REQ-003) |
+| [`03 - Requirements`](<03 - Requirements/>) | „AI Challenge Analyse“: Validierung KI-generierter Anforderungen (REQ-001, REQ-003); Qualitätsanalyse von 15 KI-generierten Anforderungen |
+| [`97 - Templates`](<97 - Templates/>) | Vorlagen für die Projektarbeit, derzeit eine Checkliste zur Qualitätsprüfung von Anforderungen |
+| `98 - Literatur` | Nur lokal: Ablage für Fachliteratur; per `.gitignore` von der Versionierung ausgeschlossen |
 | [`99 - icebox`](<99 - icebox/>) | Ablage für zurückgestellte Inhalte (derzeit nur eine leere Platzhalterdatei) |
 
 ### Dateien im Detail
@@ -57,20 +59,28 @@ Quellen: Auftrag des „Kunden“ und Project Brief, siehe Ordner [`00 - Projekt
 **03 – Requirements**
 
 - `AI Challenge Analyse.docx` – Analyse der KI-generierten Anforderungen REQ-001 (Erinnerung nach sieben Tagen Inaktivität) und REQ-003 (automatische Information der Studiengangsleitung bei kritischem Lernrückstand). Je Anforderung: getroffene Annahmen, fehlende Informationen, zu befragende Stakeholder, Prüffragen und Einordnung nach Rupp et al.
+- `quality-review.md` – Qualitätsanalyse von 15 KI-generierten Anforderungen (REQ-001 bis REQ-015, eigene Nummerierung, nicht identisch mit der AI Challenge Analyse). Je Anforderung: betroffene Qualitätsaspekte (Inhalt, Dokumentation, Abgestimmtheit) und Qualitätskriterien, Empfehlung, Fehlerbeschreibung, mögliche Konsequenz und fehlende Informationen. Verweise auf die Register (A-xxx, F-xxx) zeigen, welche Annahmen und Fragen betroffen sind. Empfehlungen: 4 × rewrite, 6 × investigate, 5 × reconsider.
+
+**97 – Templates**
+
+- `Requirements Quality Checklist.md` – Checkliste mit neun Prüffragen zur Qualität einer Anforderung, gegliedert nach Inhalt, Dokumentation und Abgestimmtheit.
 
 ## Arbeitsstand
 
-Stand: 23.10.2026
+Stand: 30.10.2026
 
 - **Aufgabe 1:** Detaillierte Stakeholderanalysen für Studierende und Lehrende mit Erkenntniszielen, Interviewleitfäden und Workshop als Elicitation-Technik; Analyse von zwei KI-generierten Anforderungen (REQ-001, REQ-003).
 - **Mission 2b:** Register überarbeitet und in zwei getrennte Dateien für Annahmen und Fragen aufgeteilt. Neue Einträge betreffen vor allem Authentifizierung, Schnittstellen, Benutzerverwaltung und Datenschutz.
 - **Aufgabe 2:** Übergreifende Stakeholderanalyse mit acht Stakeholdern, Bewertung und Portfolio-Darstellung. Neu gegenüber Aufgabe 1 sind unter anderem Studiengangsleitung, Studienadministration, IT & Online-Campus-Team sowie Datenschutz & Informationssicherheit.
+- **Mission 3:** Qualitätsanalyse von 15 KI-generierten Anforderungen mit Empfehlung je Anforderung (rewrite, investigate, reconsider), abgeglichen mit den Registern und der Stakeholderanalyse. Dazu eine Checkliste zur Qualitätsprüfung als Vorlage.
 
 ## Hinweis zur Nutzung von KI
 
 Gemäß der Dokumentationspflicht im LV-Konzept SED605 (Abschnitt „KI in der Lehre“):
 
 - **Tool:** Claude Code (Anthropic)
-- **Modell:** Claude Opus 5.5 (`claude-opus-5-5`), Überarbeitungen am 10.10.2026 und 23.10.2026
-- **Art der Nutzung:** Überarbeitung und Strukturierung dieser README-Datei. Grundlage waren die im Repository vorhandenen Dateien sowie das LV-Konzept. Die inhaltlichen Arbeitsergebnisse in den Ordnern `00` bis `99` wurden durch diese Überarbeitung nicht verändert.
-- **Übernommene Inhalte:** Der Text dieser README-Datei wurde von der KI formuliert und vom Team geprüft. Die Verantwortung für Richtigkeit und Vollständigkeit liegt beim Team.
+- **Modell:** Claude Opus 5.5 (`claude-opus-5-5`), Überarbeitungen am 10.10.2026, 23.10.2026 und 30.10.2026
+- **Art der Nutzung:**
+  - Überarbeitung und Strukturierung dieser README-Datei. Grundlage waren die im Repository vorhandenen Dateien sowie das LV-Konzept.
+  - `03 - Requirements/quality-review.md`: Überführung der Excel-basierten Analyse in .md
+  - `97 - Templates/Requirements Quality Checklist.md`: Checkliste lt. Online Kurs in .md file für weitere Verwendung überführt
